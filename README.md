@@ -141,3 +141,25 @@ build-test-deploy:
     - make deploy2
     - make deploy3
 ```
+
+## Deliveries 
+
+# Step 1 Local Test 
+
+![Screen_Shot_2024-04-13_at_10.51.48_PM](/uploads/72d69ecc93b540d9bd07c88dccc0ae1d/Screen_Shot_2024-04-13_at_10.51.48_PM.png)
+
+# Step 2 AWS Lambda Test on DynamonDB Table 
+
+![Screen_Shot_2024-04-14_at_1.48.20_PM](/uploads/1171d065592bab1718a16aa5b8d00c50/Screen_Shot_2024-04-14_at_1.48.20_PM.png)
+
+# Step 3 AWS Lambda Test
+
+![Screen_Shot_2024-04-14_at_1.53.44_PM](/uploads/a9d9abab76b214e17603f87060f264c8/Screen_Shot_2024-04-14_at_1.53.44_PM.png)
+
+# AWS Step Function
+
+![stepfunctions_graph](/uploads/f5d6c2989f85efbe7f39228fe1bf96d8/stepfunctions_graph.png)
+
+# AWS Step Function Test
+
+![Screen_Shot_2024-04-14_at_1.57.51_PM](/uploads/452f8a5e026a6df6a4c75a77858cbe5a/Screen_Shot_2024-04-14_at_1.57.51_PM.png)
