@@ -10,15 +10,13 @@ This project demonstrates a robust serverless architecture using Rust, AWS Lambd
 
 The architecture leverages the safety and performance of Rust to handle backend logic, AWS Lambda for serverless execution, DynamoDB for noSQL database interactions, and Step Functions for seamless orchestration of the workflow. This setup exemplifies a real-world scenario where different cloud components work together to process and manage data effectively.
 
-## Goal
-
-This project utilizes Rust to create AWS Lambda functions orchestrated by AWS Step Functions, forming a data processing pipeline that interacts with AWS DynamoDB. The pipeline consists of three primary components:
+## Key Features
 
 1. **Quote Generator (`step1`)**: Generates a random motivational quote.
 2. **Database Handler (`step2`)**: Stores and retrieves quotes in/from DynamoDB.
 3. **Quote Counter (`step3`)**: Counts the total quotes stored.
 
-The functions are developed in Rust and managed through GitLab CI/CD for automated deployment.
+These components are carefully coordinated using AWS Step Functions, which illustrates how different serverless functions can be linked to form a coherent data processing pipeline. The project is also integrated with GitLab CI/CD to automate the deployment and management of these functions, ensuring a smooth development lifecycle and continuous delivery.
 
 ## Technologies Used
 
@@ -28,6 +26,24 @@ The functions are developed in Rust and managed through GitLab CI/CD for automat
 - AWS Step Functions
 - GitLab CI/CD
 - Cargo
+
+## Configuration Files
+
+### `Cargo.toml`
+
+This file configures all metadata needed by Cargo to compile the project:
+
+- **Package details**: Includes the name, version, and edition of the Rust package.
+- **Binary targets**: Specifies three separate binaries, each corresponding to a different step of the project and linked to specific source files.
+- **Dependencies**: Lists external crates like `aws-sdk-dynamodb` for DynamoDB integration, `lambda_runtime` for AWS Lambda compatibility, and others essential for the project functionality.
+
+### `Makefile`
+
+The Makefile simplifies command execution for various phases of project development:
+
+- **Compilation and Deployment**: Includes commands to build and deploy each step of the Lambda functions.
+- **Utility Commands**: Provides quick access to format, lint, and test the entire Rust project.
+- **Local and Remote Invocation**: Facilitates both local and AWS remote testing of Lambda functions using specified test commands.
 
 ## Environment Setup
 
