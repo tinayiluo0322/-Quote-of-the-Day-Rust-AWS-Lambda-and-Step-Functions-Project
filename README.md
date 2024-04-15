@@ -208,4 +208,4 @@ build-test-deploy:
 
 # AWS Step Function Test
 
-![Screen_Shot_2024-04-14_at_1.57.51_PM](/uploads/452f8a5e026a6df6a4c75a77858cbe5a/Screen_Shot_2024-04-14_at_1.57.51_PM.png)
+![Screen_Shot_2024-04-15_at_12.33.25_PM](/uploads/662fc2c0250fb8807556b126a2902ca5/Screen_Shot_2024-04-15_at_12.33.25_PM.png)
