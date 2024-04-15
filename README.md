@@ -29,6 +29,36 @@ The functions are developed in Rust and managed through GitLab CI/CD for automat
 - GitLab CI/CD
 - Cargo
 
+## Environment Setup
+
+### Local Environment Variables
+
+Before deploying and testing the Lambda functions, set up the necessary AWS credentials and configuration on your local environment. Use an `.env` file to manage these variables securely.
+
+1. **Create the .env File:**
+
+    Create a file named `.env` in the root directory of your project and add the following environment variables:
+
+    ```plaintext
+    AWS_ACCESS_KEY_ID=your_access_key_id
+    AWS_SECRET_ACCESS_KEY=your_secret_access_key
+    AWS_DEFAULT_REGION=your_default_region
+    ```
+
+2. **Load Environment Variables:**
+
+    Before running or deploying your functions, load the environment variables:
+
+    ```bash
+    set -a
+    source .env
+    set +a
+    ```
+
+### Adding Variables in GitLab CI/CD
+
+To ensure that your CI/CD pipeline has access to the necessary AWS credentials, add these as environment variables in your GitLab project settings.
+
 ## Step1: Test Locally
 
 ### Description
