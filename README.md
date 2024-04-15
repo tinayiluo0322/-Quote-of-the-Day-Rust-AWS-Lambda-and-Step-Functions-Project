@@ -4,6 +4,10 @@
 
 # "Quote of the Day": Rust AWS Lambda and Step Functions Project
 
+## Demo Video 
+
+[Demo Video - "Quote of the Day": Rust AWS Lambda and Step Functions Project](https://youtu.be/43ng-wavbac)
+
 ## Overview
 
 This project demonstrates a robust serverless architecture using Rust, AWS Lambda, AWS DynamoDB, and AWS Step Functions. It is designed to showcase how serverless functions can be used to create scalable and efficient data processing pipelines in the cloud. The primary purpose of this project is to implement a series of interconnected AWS Lambda functions that handle different aspects of data management—from generating data to storing and aggregating it.
